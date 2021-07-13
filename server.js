@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
   res.send("<b>Backend</b>");
 });
 
-const PORT = 8000;
+const PORT = Process.env.PORT || 8070;
 const MONGODB_URL =
   "mongodb+srv://kavindu:kavindu2973@crud.gasww.mongodb.net/mernCrud?retryWrites=true&w=majority";
 mongoose
