@@ -14,6 +14,10 @@ app.use(bodyParser.json());
 
 app.use(postRoutes);
 
+app.get("/", (req, res) => {
+  res.send("<b>Backend</b>");
+});
+
 const PORT = 8000;
 const MONGODB_URL =
   "mongodb+srv://kavindu:kavindu2973@crud.gasww.mongodb.net/mernCrud?retryWrites=true&w=majority";
